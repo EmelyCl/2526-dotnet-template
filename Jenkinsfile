@@ -26,6 +26,7 @@ pipeline {
                 sh 'dotnet test Rise.sln'
             }
         }
+        
         stage('Deploy'){
             agent {
                 docker {
