@@ -1,0 +1,6 @@
+services:
+  riseapp:
+    build: .
+    container_name: riseapp
+    ports: 
+      - 5001:8080
