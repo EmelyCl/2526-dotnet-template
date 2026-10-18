@@ -5,6 +5,10 @@ pipeline {
             reuseNode true
         }
     }
+    
+    triggers {
+        pollSCM('H/2 * * * *') 
+    }
 
     stages{
         stage('Restore .NET app'){
