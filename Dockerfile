@@ -4,7 +4,7 @@ WORKDIR /src
 
 COPY . .
 RUN dotnet restore
-RUN dotnet publish Rise.Server/Rise.Server.csproj -c Release -o /app --no-restore 
+RUN dotnet publish src/Rise.Server/Rise.Server.csproj -c Release -o /app --no-restore 
 
 # Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
