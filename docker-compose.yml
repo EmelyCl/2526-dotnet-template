@@ -4,3 +4,6 @@ services:
     container_name: riseapp
     ports: 
       - 5001:8080
+    environment:
+      FrontendUrl: "http://172.16.0.10:5001"
+      BackendUrl: "http://172.16.0.10:5001"
